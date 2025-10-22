@@ -3,7 +3,7 @@ module "project_ec2" {
   instance_count     = 2
   name               = "Ubuntu-Web"
   account            = data.aws_caller_identity.current.account_id
-  aws_ami            = "ami-0b9064170e32bde34"
+  aws_ami            = "ami-0d902a8756c37e690"
   instance_type      = "t3.micro"
   private_subnet_ids = module.vpc.private_subnet_ids
   public_subnet_ids  = module.vpc.public_subnet_ids
